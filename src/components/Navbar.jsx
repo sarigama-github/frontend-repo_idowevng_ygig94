@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, X, Building2, Wind, FileBadge2 } from 'lucide-react'
+import { Menu, X, Building2, Wind, FileCheck2 } from 'lucide-react'
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -29,7 +29,7 @@ function Navbar() {
               </a>
             ))}
             <a href="#contact" className="inline-flex items-center gap-2 rounded-md bg-slate-900 text-white px-4 py-2 text-sm shadow-sm hover:bg-slate-800 transition-colors">
-              <FileBadge2 size={16} /> Free Quote
+              <FileCheck2 size={16} /> Free Quote
             </a>
           </nav>
 

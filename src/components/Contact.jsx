@@ -24,8 +24,8 @@ function Contact() {
       })
 
       if (!res.ok) throw new Error('Failed to send')
-      const data = await res.json()
-      setStatus({ type: 'success', message: 'Thanks! We\'ll get back to you shortly.' })
+      await res.json()
+      setStatus({ type: 'success', message: "Thanks! We'll get back to you shortly." })
       e.currentTarget.reset()
     } catch (err) {
       setStatus({ type: 'error', message: 'Something went wrong. Please try again.' })
@@ -38,7 +38,7 @@ function Contact() {
         <div className="grid lg:grid-cols-2 gap-10">
           <div>
             <h2 className="text-3xl font-semibold tracking-tight text-slate-900">Request a Quote</h2>
-            <p className="mt-3 text-slate-600">Tell us about your project and the services you7re interested in. We7ll reply within one business day.</p>
+            <p className="mt-3 text-slate-600">Tell us about your project and the services you're interested in. We'll reply within one business day.</p>
             <div className="mt-6 rounded-2xl border border-slate-200 p-6">
               <dl className="space-y-4 text-sm">
                 <div className="flex justify-between"><dt className="text-slate-600">Email</dt><dd className="font-medium text-slate-900">studio@example.com</dd></div>

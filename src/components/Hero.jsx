@@ -51,9 +51,9 @@ function Hero() {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="relative aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden shadow-xl ring-1 ring-slate-900/5">
-              <img src="/architect-hero.jpg" alt="Architectural concept" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/40 via-transparent to-transparent" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5">
+              <div className="w-full h-full bg-gradient-to-tr from-slate-200 via-slate-100 to-white" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/20 via-transparent to-transparent" />
             </div>
           </div>
         </div>
